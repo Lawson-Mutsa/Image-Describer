@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image Describer — Your Image Described</title>
+<meta name="description" content="Get a description of your image">
+<meta name="author" content="Lawson Mutsa">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles/base.css">
+<script src="scripts/interactions.js" defer></script>
+<script src="scripts/functionality.js" defer></script>
+</head>
+<body>
+
+  <div class="grain"></div>
+
+  <header class="site-header">
+    <div class="brand">
+      <svg class="brand-mark" viewBox="0 0 40 40" width="28" height="28" aria-hidden="true">
+        <circle cx="20" cy="20" r="18" fill="none" stroke="currentColor" stroke-width="1.5"/>
+        <path d="M20 4 L24 16 L36 16 L26 23 L30 35 L20 27 L10 35 L14 23 L4 16 L16 16 Z"
+              fill="none" stroke="currentColor" stroke-width="1" opacity="0.5"/>
+      </svg>
+      <span>Image Describer</span>
+    </div>
+    <p class="tagline">Get a description of your image</p>
+  </header>
+
+  <main class="stage">
+
+    <!-- Step 1: upload -->
+    <section class="panel">
+      <div class="dropzone" id="dropzone" tabindex="0" role="button" aria-label="Upload an image">
+        <div class="iris" id="iris" aria-hidden="true">
+          <span class="blade b1"></span>
+          <span class="blade b2"></span>
+          <span class="blade b3"></span>
+          <span class="blade b4"></span>
+          <span class="blade b5"></span>
+          <span class="blade b6"></span>
+        </div>
+        <p class="drop-text">Drop an image here, or <span class="link-like">browse</span></p>
+        <p class="drop-sub">JPG, PNG, or WEBP</p>
+        <input type="file" id="file-input" accept="image/*" hidden>
+      </div>
+    </section>
+
+    <section id="results" class="results" aria-live="polite"></section>
+
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios@1.7.7/dist/axios.min.js"></script>
+</body>
+</html>
