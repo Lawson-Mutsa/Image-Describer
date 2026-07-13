@@ -3,7 +3,7 @@
 A web application that describes the content of an image using a hugging face model
 
 
-[Software Demo Video](https://youtu.be/5Q-vQAoUpVU)
+[Software Demo Video](https://youtu.be/-yg-r0Lp0w4)
 
 # Development Environment
 
