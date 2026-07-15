@@ -31,6 +31,7 @@ The purpose of this project was to gain hands-on experience integrating Artifici
 
 # Future Work
 
-- Adding databases to future web applications
-- Adding notifications capabilities in future applications
-- Creating applications using django 
+- User Authentication and Authorization
+- User Log File
+- System Monitor
+
